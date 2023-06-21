@@ -1,0 +1,18 @@
+- Machine Learning is a method of data analysis that automates analytical model building.
+- Using algorithms that iteratively learn from data, machine learning allows computers to find hidden insights without being 
+explicitly programmed where to look.
+
+Data Acquisition -> Data Cleaning -> Test Data -> Model Testing -> Model Deployment
+                         (70-80%) -> Model Training -> Model Testing  -> Model Deployment
+                         
+Supervised Learning
+- You have labeled data and are trying to predict a label based off of known features.
+- Use labeled data
+
+Unsupervised Learning
+- You have unlabeled data and are trying to group together similar data points based off of features
+
+Reinforcement Learning
+- Algorithms learns to perform an action from experience.
+
+

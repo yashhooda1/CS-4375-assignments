@@ -1,0 +1,85 @@
+Entropy of the entire set
+S = [9+, 5-]	
+- Entropy(S) = -PlogP0 - P1logP1
+             = -9/14log9/14 - 5/14log5/14
+              = 0.94
+
+- Determine Outlook between 
+Attribute: Outlook
+S(Sunny) -> [2+,3-]
+      - Entropy_S_Sunny = -2/5log2/5 - 3/5log3/5 = 0.971
+S(Overcast) -> [4+, 0-] = 
+	- Entropy = 0
+S(Rain) -> [3+,2-] 
+ 	- Entropy_S_Rain = -3/5log3/5 - 2/5log2/5 = 0.971
+
+Gain(S, Outlook) = Entropy(S) - Sum(Sun, Over, Rain)
+                 = 0.94 - 5/14*0.971 -4/14*0 - 5/14*0.971
+		     = 0.2464
+
+Attribute: Outlook -> 0.2464
+Attribute: Temperature -> 0.0289
+S(Hot) -> [2+,2-]
+	- Entropy_S_Hot =  -2/4log2/4 - 2/4log2/4 = 1
+S(Mild) -> [4+,2-]
+	- Entropy_S_Mild = -4/6log4/6 - 2/6log2/6 = 0.9183
+S(Cool) -> [3+,1-]
+	- Entropy_S_Cool = -3/4log3/4 - 1/4log1/4 = 0.8113
+
+Gain(S, Temperature) = Entropy(S) - Sum(Hot, Mild, Cool)
+			   = 0.94 - 4/14*1 -6/14*0.9183 -4/14*0.8113
+			   = 0.0289
+
+Attribute: Humidity -> 0.1516
+S(High) -> [3+,4-]
+S(Normal) -> [6+,1-]
+
+Attribute: Wind -> 0.0478
+S(Weak)
+S(Strong)
+Note: [1+, 1-] -> 1, [0+, 0-] -> 0
+
+- Root is Outlook being the highest information gain.
+
+Attribute: Temp
+S_Sunny = [2+, 3-]
+    - Entropy(S_Sunny) = -2/5log2/5 - 3/5log3/5 = 0.97
+S_Hot -> [0+, 2-] = 0
+S_Mild -> [1+, 1-] = 1.0
+S_Cool -> [1+, 0-] = 0
+
+Gain(S_Sunny, Temp) = 0.97 - 2/5*0 - 2/5*1 -1/5*0 = 0.570
+
+Attribute: Humidity
+S_Sunny = [2+, 3-]
+    - Entropy(S_Sunny) = -2/5log2/5 - 3/5log3/5 = 0.97
+S_High ->
+S_Normal ->
+Gain(S_Sunny, Humidity) = 0.97 - 2/5*0 - 2/5*1 -1/5*0 = 0.97
+
+Attribute: Wind
+S_Sunny = [2+, 3-]
+    - Entropy(S_Sunny) = -2/5log2/5 - 3/5log3/5 = 0.97
+S_Weak ->
+S_Strong ->
+Gain(S_Sunny, Wind) = 0.97 - 2/5*0 - 2/5*1 -1/5*0 = 0.0192
+
+- No need to determine the next node for Overcast
+- Determine the next nodes for Rainy
+
+Attribute: Temp
+S_Rain = [3+, 2-]
+    - Entropy(S_Sunny) = 0.97
+S_Hot -> [0+, 2-] = 0
+S_Mild -> [1+, 1-] = 0.91
+S_Cool -> [1+, 0-] = 1.0
+
+Gain(S_Rain, Temp) = 0.0192
+
+Gain(S_Rain, Humidity) = 0.0192
+
+Gain(S_Rain, Wind) = 0.97
+
+
+
+

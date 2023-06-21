@@ -1,0 +1,46 @@
+Lecture Jan 23
+Data Science = CS + Statistics + Domain Knowledge
+Machine Learning 
+    Arthur Samuel: "Field of study that gives computers the ability to learn without being explicitly programmed."
+    
+Data Science, Deep Learning, AI, ML
+Deep Learning 1940
+- type of ML & AI that resembles the human gain certain 
+types of knowledge
+- includes statistics and predictive modeling 
+- makes processes simpler and easier for DS to gather, analyze, and interpret massive amounts of data.
+- Neural Networks 
+  - ANN, CNN, RNN
+  - ANN Artificial NN
+      - inspired by the animal brain.
+  - CNN Convolutional NN
+      - surpasses other NN when given inputs such as
+      images, voice, (NLP, speech recognition, image)
+      - Siri, Alexa, Cortana, Assistant
+     - RNN 
+       Sequential data or series
+ 
+ - ML 1943
+   - a branch of AI and CS focuses on using data and
+   algorithm to imitate how humans think 
+   - mathemetical modeling of NN served as the basis for 
+   invention of ML in 3 types: 
+      - Supervised Learning
+      - Unsupervised Learning
+      - Reinforcement Learning
+      
+   - AI 1950
+      - the question was asked as to why machines could not use knowledge like humans to solve
+      problems.
+      - weak AI (Siri, Alexa)
+      - General AI
+      - Strong AI
+      
+      
+   - Data Science
+     - robots, fuzzy logic, expert systems
+     
+     - AGI: dream of AI of building machines to think like humans.
+     
+ 
+  

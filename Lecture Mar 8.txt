@@ -1,0 +1,30 @@
+Lecture Mar 8
+- Logistic Regression
+     - train/test -> predict with LR -> Sigmoid (logistic)
+      LR z -> g(z) = 1 / (1 + e^-z) 
+                   = P(>= 50%) ~ 1
+                   = P(< 50%) ~ 0
+     - validation comes from Confusion Matrix
+     
+                 Predicted       Predicted
+                     No              Yes
+                 ------------------------- 
+      Actual No      TN              FP
+      ------------------------------------
+      Actual Yes     FN              TP
+      
+     - Accuracy: (TP + TN) / total 
+     
+     - example:
+        - total 165 patients 
+            False    True
+        0      50     10        60
+        1      5      100       105
+        
+- https://matplotlib.org/3.1.1/gallery/mplot3d/scatter3d
+       
+- Review:
+ - boxplot
+ - Linear to Logistic example
+ - example of graph in R
+ - 3D view

@@ -1,0 +1,19 @@
+CNN - Convolutional Neural Network
+- Used for image classification
+
+Traditional Approach
+- requires domain
+- not scalable
+
+Deep Learning Approach 
+- More accurate
+- Easy to scale
+
+Recurrent Neural Network (RNN)
+- Solves the problem through modeling recurrent data
+- Whenever dataset is dependent on previous points, the data is said to be sequential.
+- RNNs can be used to predict the stock market price of tomorrow.
+- RNNs can be used for word suggestions in text messaging and language translation.
+- Can also be used for speech to text translation.
+
+
